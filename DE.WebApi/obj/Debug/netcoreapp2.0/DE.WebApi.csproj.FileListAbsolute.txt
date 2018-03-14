@@ -1,0 +1,11 @@
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\bin\Debug\netcoreapp2.0\DE.WebApi.deps.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\bin\Debug\netcoreapp2.0\DE.WebApi.runtimeconfig.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\bin\Debug\netcoreapp2.0\DE.WebApi.runtimeconfig.dev.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\bin\Debug\netcoreapp2.0\DE.WebApi.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\bin\Debug\netcoreapp2.0\DE.WebApi.pdb
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\obj\Debug\netcoreapp2.0\DE.WebApi.csprojResolveAssemblyReference.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\obj\Debug\netcoreapp2.0\DE.WebApi.csproj.CoreCompileInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\obj\Debug\netcoreapp2.0\DE.WebApi.AssemblyInfoInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\obj\Debug\netcoreapp2.0\DE.WebApi.AssemblyInfo.cs
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\obj\Debug\netcoreapp2.0\DE.WebApi.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi\obj\Debug\netcoreapp2.0\DE.WebApi.pdb
