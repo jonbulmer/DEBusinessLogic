@@ -22,5 +22,17 @@ namespace DE.WebApi.Controllers
         {
             return Ok(CompaniesDataStore.Current.Companies);
         }
+
+        [HttpGet("{id}", Name = "Get Company")]
+        public IActionResult GetCompany(int id)
+        {
+            var companyToReturn = CompaniesDataStore.Current.Companies.FirstOrDefault(c => c.Id == id);
+            if (companyToReturn == null)
+            {
+                _logger.LogInformation($"Company with id {id} as not found");
+                return NotFound();
+            }
+            return Ok(companyToReturn);
+        }
     }   
 }
