@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using DE.WebApi.FakeDataStore;
+using DE.WebApi.Models;
 
 namespace DE.WebApi.Controllers
 {
@@ -33,6 +34,26 @@ namespace DE.WebApi.Controllers
                 return NotFound();
             }
             return Ok(companyToReturn);
+        }
+
+        [HttpPost()]
+        public IActionResult CreateCompany([FromBody] CompanyForCreationDto Company)
+        {
+            if (Company == null)
+            {
+                return BadRequest();
+            }
+
+            var finalCompany = new CompanyDto()
+            {
+                Id = 3,
+                CompanyName = Company.Company,
+                CompanyDescription = Company.Company,
+                Status = Company.Company
+            };
+            CompaniesDataStore.Current.Companies.Add(finalCompany);
+
+            return CreatedAtRoute("GetCompany",new { id = 3}, finalCompany );
         }
     }   
 }

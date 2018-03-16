@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DE.WebApi.Models
 {
-    public class CompanyForCreationDTO
+    public class CompanyForCreationDto
     {
         public string Company { get; set;}
     }
