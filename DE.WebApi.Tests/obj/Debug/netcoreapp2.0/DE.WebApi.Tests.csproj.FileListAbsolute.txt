@@ -1,0 +1,16 @@
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\obj\Debug\netcoreapp2.0\DE.WebApi.Tests.csprojResolveAssemblyReference.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\obj\Debug\netcoreapp2.0\DE.WebApi.Tests.csproj.CoreCompileInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\obj\Debug\netcoreapp2.0\DE.WebApi.Tests.AssemblyInfoInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\obj\Debug\netcoreapp2.0\DE.WebApi.Tests.AssemblyInfo.cs
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.Tests.deps.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.Tests.runtimeconfig.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.Tests.runtimeconfig.dev.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.Tests.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.Tests.pdb
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\bin\Debug\netcoreapp2.0\DE.WebApi.pdb
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\obj\Debug\netcoreapp2.0\DE.WebApi.Tests.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.WebApi.Tests\obj\Debug\netcoreapp2.0\DE.WebApi.Tests.pdb
