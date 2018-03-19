@@ -1,6 +1,7 @@
 using DE.WebApi.FakeDataStore;
 using DE.WebApi.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DE.WebApi.Tests
 {
@@ -14,10 +15,11 @@ namespace DE.WebApi.Tests
             var controller = new CompaniesController(null);
             // Act
             var companyReturned = controller.GetCompany(1);
-          
+             
 
             // Assert
             var testCompany = "{'Id':'1','CompanyName':'Diamond Edge','CompanyDescription':'Host Company','Status':'Mock'}";
+             
             Assert.AreEqual(companyReturned, testCompany);
         }       
     }
