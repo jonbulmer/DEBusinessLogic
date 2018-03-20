@@ -1,0 +1,8 @@
+
+*.ide-shm
+*.ide-wal
+*.cache
+*.props
+*.targets
+.vs/DEBusinessLogic/v15/.suo
+.vs/DEBusinessLogic/v15/.suo
