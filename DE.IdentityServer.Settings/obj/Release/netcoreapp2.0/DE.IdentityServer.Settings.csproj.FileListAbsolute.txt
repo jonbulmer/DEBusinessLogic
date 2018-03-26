@@ -1,0 +1,11 @@
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\bin\Release\netcoreapp2.0\DE.IdentityServer.Settings.deps.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\bin\Release\netcoreapp2.0\DE.IdentityServer.Settings.runtimeconfig.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\bin\Release\netcoreapp2.0\DE.IdentityServer.Settings.runtimeconfig.dev.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\bin\Release\netcoreapp2.0\DE.IdentityServer.Settings.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\bin\Release\netcoreapp2.0\DE.IdentityServer.Settings.pdb
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\obj\Release\netcoreapp2.0\DE.IdentityServer.Settings.csprojResolveAssemblyReference.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\obj\Release\netcoreapp2.0\DE.IdentityServer.Settings.csproj.CoreCompileInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\obj\Release\netcoreapp2.0\DE.IdentityServer.Settings.AssemblyInfoInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\obj\Release\netcoreapp2.0\DE.IdentityServer.Settings.AssemblyInfo.cs
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\obj\Release\netcoreapp2.0\DE.IdentityServer.Settings.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IdentityServer.Settings\obj\Release\netcoreapp2.0\DE.IdentityServer.Settings.pdb
