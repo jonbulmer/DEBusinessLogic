@@ -6,3 +6,5 @@
 *.targets
 .vs/DEBusinessLogic/v15/.suo
 .vs/DEBusinessLogic/v15/.suo
+.vs/DEBusinessLogic/v15/Server/sqlite3/storage.ide
+.vs/DEBusinessLogic/v15/.suo
