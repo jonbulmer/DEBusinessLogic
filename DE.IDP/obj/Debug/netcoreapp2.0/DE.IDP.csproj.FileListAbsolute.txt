@@ -1,0 +1,11 @@
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\bin\Debug\netcoreapp2.0\DE.IDP.deps.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\bin\Debug\netcoreapp2.0\DE.IDP.runtimeconfig.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\bin\Debug\netcoreapp2.0\DE.IDP.runtimeconfig.dev.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\bin\Debug\netcoreapp2.0\DE.IDP.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\bin\Debug\netcoreapp2.0\DE.IDP.pdb
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\obj\Debug\netcoreapp2.0\DE.IDP.csprojResolveAssemblyReference.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\obj\Debug\netcoreapp2.0\DE.IDP.csproj.CoreCompileInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\obj\Debug\netcoreapp2.0\DE.IDP.AssemblyInfoInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\obj\Debug\netcoreapp2.0\DE.IDP.AssemblyInfo.cs
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\obj\Debug\netcoreapp2.0\DE.IDP.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\DE.IDP\obj\Debug\netcoreapp2.0\DE.IDP.pdb

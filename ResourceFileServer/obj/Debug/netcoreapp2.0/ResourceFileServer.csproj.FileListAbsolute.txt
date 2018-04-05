@@ -1,0 +1,4 @@
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.csprojResolveAssemblyReference.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.csproj.CoreCompileInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.AssemblyInfoInputs.cache
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.AssemblyInfo.cs
