@@ -8,3 +8,8 @@
 .vs/DEBusinessLogic/v15/.suo
 .vs/DEBusinessLogic/v15/Server/sqlite3/storage.ide
 .vs/DEBusinessLogic/v15/.suo
+ResourceFileServer/bin/Debug/netcoreapp2.0/ResourceFileServer.deps.json
+ResourceFileServer/bin/Debug/netcoreapp2.0/ResourceFileServer.runtimeconfig.dev.json
+ResourceFileServer/obj/Debug/netcoreapp2.0/ResourceFileServer.csproj.FileListAbsolute.txt
+ResourceFileServer/obj/project.assets.json
+.vs/DEBusinessLogic/v15/.suo

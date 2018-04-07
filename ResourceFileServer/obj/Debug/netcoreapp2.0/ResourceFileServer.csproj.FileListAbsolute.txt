@@ -2,3 +2,7 @@ C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp
 C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.csproj.CoreCompileInputs.cache
 C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.AssemblyInfoInputs.cache
 C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.AssemblyInfo.cs
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.deps.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.runtimeconfig.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.runtimeconfig.dev.json
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.dll
