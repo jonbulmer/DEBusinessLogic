@@ -9,7 +9,8 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
 using Microsoft.AspNetCore.Mvc.Authorization;
-
+using ResourceFileServer.Providers;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
@@ -85,10 +86,12 @@ namespace ResourceFileServer
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseCors("corsGlobalPolicy");
+
+            app.UseStaticFiles();
+
+            app.UseAuthentication();
+            app.UseMvc();
         }
 
         public static void Main(string[] args)
