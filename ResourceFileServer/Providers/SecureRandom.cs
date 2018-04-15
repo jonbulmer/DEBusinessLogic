@@ -14,7 +14,9 @@ namespace ResourceFileServer.Providers
 
         public int Next()
         {
-            return 1;
+            var data = new byte[sizeof(int)];
+            rng.GetBytes(data);
+            return BitConverter.ToInt32(data, 0) & (int.MaxValue - 1);
         }
 
         public int Next(int maxValue)
