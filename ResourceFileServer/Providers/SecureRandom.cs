@@ -30,14 +30,15 @@ namespace ResourceFileServer.Providers
             {
                 throw new ArgumentOutOfRangeException();
             }
-
-
             return (int)Math.Floor(minValue + ((double)maxValue - minValue) * NextDouble());
         }
 
         public double NextDouble()
         {
-            return 1;
+            var data = new byte[sizeof(uint)];
+            rng.GetBytes(data);
+            var randUnit = BitConverter.ToUInt32(data, 0);
+            return randUnit / (uint.MaxValue + 1.0);
         }
 
         public override void GetBytes(byte[] data)
