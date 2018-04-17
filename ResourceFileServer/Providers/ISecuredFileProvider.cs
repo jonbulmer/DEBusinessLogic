@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ResourceFileServer.Providers
 {
-    public interface ISecureFileProvider
+    public interface ISecuredFileProvider
     {
         bool FileIdExists(string id);
 
