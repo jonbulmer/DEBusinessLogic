@@ -7,6 +7,15 @@ namespace ResourceFileServer.Providers
 {
     public class SecuredFileProvider : ISecuredFileProvider
     {
+        List<string> _fileId;
+
+        private readonly UseOnceAccessIdService _useOnceAccessIdService;
+
+        public SecuredFileProvider(UseOnceAccessIdService _oneTimeTokenService)
+        {
+            _fileId = new List<string> { "securefile.txt", "securefileadmin.txt", "securefiletwo.txt" };
+            _useOnceAccessIdService = _oneTimeTokenService;
+        }
         public string AddFileIdForUseOnceAccessId(string filePath)
         {
             throw new NotImplementedException();
