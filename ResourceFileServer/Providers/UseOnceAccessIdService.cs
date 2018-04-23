@@ -20,9 +20,26 @@ namespace ResourceFileServer.Providers
             {
                 // Max 30 seconds to start download after requesting one time tocken.
                 _useOnceAccessIds.RemoveAll(t => t.Created < DateTime.UtcNow.AddSeconds(-_timeToLive));
+
+                var item = _useOnceAccessIds.FirstOrDefault(t => t.AccessId == useOnceAccessId);
+                if (item != null)
+                {
+                    fileId = item.FileId;
+                    _useOnceAccessIds.Remove(item);
+                }
             }
 
             return fileId;
+        }
+
+        public string AddFileIdForOnceAccessId(string filePath)
+        {
+            var useOnceAccessId = new UseOnceAccessId(filePath);
+            lock (lockObject)
+            {
+                _useOnceAccessIds.Add(useOnceAccessId);
+            }
+            return useOnceAccessId.AccessId;
         }
     }
 }
