@@ -9,10 +9,10 @@ namespace ResourceFileServer.Providers
     {
         bool FileIdExists(string id);
 
-        bool HasUsedClaimToAccessFile(string fileId, bool isSecureFilesAdmin);
+        bool HasUserClaimToAccessFile(string fileId, bool isSecureFilesAdmin);
 
         List<string> GetFileIdForUser(bool isSecuredFileAdmin);
-        string GetFileIdForUseOnceAccessId(string useOnceAccessId);
+        string GetFileIdForUseOnceAccessId(string oneTimeToken);
         string AddFileIdForUseOnceAccessId(string filePath);
     }
 }

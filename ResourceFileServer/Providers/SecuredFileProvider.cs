@@ -18,31 +18,43 @@ namespace ResourceFileServer.Providers
         }
         public string AddFileIdForUseOnceAccessId(string filePath)
         {
-            throw new NotImplementedException();
+            return _useOnceAccessIdService.AddFileIdForOnceAccessId(filePath);
         }
 
-        public bool FileIdExists(string id)
+        public bool FileIdExists(string fileId)
         {
-            throw new NotImplementedException();
+            if(_fileId.Contains(fileId.ToLower()))
+            {
+                return true;
+            }
+            return false;
         }
 
-        public string GetFileIdForUseOnceAccessId(string useOnceAccessId)
+        public string GetFileIdForUseOnceAccessId(string oneTimeToken)
         {
-            throw new NotImplementedException();
+            return _useOnceAccessIdService.GetFileIdForUseOnceAccesId(oneTimeToken);
         }
 
-        public List<string> GetFileIdForUser(bool isSecuredFileAdmin)
+        public List<string> GetFilesForUser(bool isSecuredFileAdmin)
         {
-            throw new NotImplementedException();
-        }
+            List<string> files = new List<string>();
+            files.Add("SecureFile.txt");
+            files.Add("SecureFileTwo");
 
-        public bool HasUsedClaimToAccessFile(string fileId, bool isSecureFilesAdmin)
-        {
-            throw new NotImplementedException();
+            if (isSecuredFileAdmin)
+            {
+                files.Add("SecureFileAdmin.txt");
+            }
+
+            return files;
         }
 
         public bool HasUserClaimToAccessFile(string fileId, bool isSecuredFilesAdmin)
         {
+            if ("SecureFileAdmin.txt" == fileId && !isSecuredFilesAdmin)
+            {
+                return false;
+            }
             return false;
         }
     }
