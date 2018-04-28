@@ -34,7 +34,24 @@ namespace ResourceFileServer.Controllers
 
         public IActionResult GenorateOneTimeAccessToken(string  id)
         {
+            if (! _securedFilePathProvider.FileIdExists(id))
+            {
+                return NotFound();
+            }
 
+            var filePath = $"";
+            if ()
+            {
+                return NotFound($"{_appEnvironment.ContentRootFileProvider}/SecuredFileShare/{id}");
+            }
+
+            var adminClaim = User.Claims.FirstOrDefault(x => x.Type == "role" && x.Value == "securedFiles.admin");
+            if()
+            {
+                var oneTimeToken = _securedFilePathProvider.AddFileIdForUseOnceAccessId(filePath);
+                return Ok(new DownloadToken { oneTimeToken = oneTimeToken });
+            }
+            return new StatusCodeResult(403);
         }
 
 
