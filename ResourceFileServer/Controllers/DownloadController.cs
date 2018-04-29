@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using ResourceFileServer.Providers;
@@ -12,6 +11,7 @@ namespace ResourceFileServer.Controllers
     {
         private readonly IHostingEnvironment _appEnvironment;
         private readonly ISecuredFileProvider _securedFilePathProvider;
+
         public DownloadController(ISecuredFileProvider securedFileProvider, IHostingEnvironment appEnvironment)
         {
             _securedFilePathProvider = securedFileProvider;
@@ -31,22 +31,23 @@ namespace ResourceFileServer.Controllers
             return new StatusCodeResult(401);
         }
 
-
+        [Authorize]
+        [HttpGet("GenerateOneTimeAccessToken/{id}")]
         public IActionResult GenorateOneTimeAccessToken(string  id)
         {
             if (! _securedFilePathProvider.FileIdExists(id))
             {
-                return NotFound();
+                return NotFound($"File id dose not exitst: {id}");
             }
 
-            var filePath = $"";
-            if ()
+            var filePath = $"{_appEnvironment.ContentRootPath}/SecuredFileShare/{id}";
+            if (!System.IO.File.Exists(filePath))
             {
-                return NotFound($"{_appEnvironment.ContentRootFileProvider}/SecuredFileShare/{id}");
+                return NotFound($"File id dose not exitst: {id}");
             }
 
             var adminClaim = User.Claims.FirstOrDefault(x => x.Type == "role" && x.Value == "securedFiles.admin");
-            if()
+            if(_securedFilePathProvider.HasUserClaimToAccessFile(id, adminClaim != null))
             {
                 var oneTimeToken = _securedFilePathProvider.AddFileIdForUseOnceAccessId(filePath);
                 return Ok(new DownloadToken { oneTimeToken = oneTimeToken });
