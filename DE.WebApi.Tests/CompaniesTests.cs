@@ -3,6 +3,7 @@ using DE.WebApi.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
 
+// TODO when I have internet add NUnit and NSubtitute.
 namespace DE.WebApi.Tests
 {
     [TestClass]
