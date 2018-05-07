@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "4bbe6c87835e30fc6383fdc9a2b968c0b7d92fc0"
+    "signature": "f4105928eae6d14dc7a4d91dfc5cd6c6f80f7d49"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,7 +11,9 @@
           "DE.WebApi": "1.0.0",
           "MSTest.TestAdapter": "1.2.0",
           "MSTest.TestFramework": "1.2.0",
-          "Microsoft.NET.Test.Sdk": "15.5.0"
+          "Microsoft.NET.Test.Sdk": "15.5.0",
+          "NSubstituteAutoMocker": "1.1.0",
+          "NUnit": "3.10.1"
         },
         "runtime": {
           "DE.WebApi.Tests.dll": {}
@@ -2124,6 +2126,24 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NSubstitute/1.8.2": {
+        "runtime": {
+          "lib/net45/NSubstitute.dll": {}
+        }
+      },
+      "NSubstituteAutoMocker/1.1.0": {
+        "dependencies": {
+          "NSubstitute": "1.8.2"
+        },
+        "runtime": {
+          "lib/net45/NSubstituteAutoMocker.dll": {}
+        }
+      },
+      "NUnit/3.10.1": {
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -4762,6 +4782,27 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "NSubstitute/1.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BQ1+IkxF2gMgoT1roWajubawdi0ccDxmG9/pm9D7QZuIMSWHrbYQVDtWOacmjkRi9y+0zSvu7c71dvfCU7frWw==",
+      "path": "nsubstitute/1.8.2",
+      "hashPath": "nsubstitute.1.8.2.nupkg.sha512"
+    },
+    "NSubstituteAutoMocker/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hUw1IewvGTl2CsYkKjdrH2H6z24bVw+EHv3x+EMIfhygeF5gaHx4FbGJOuEXscXqUOrXCJInc474UbFFpgkmkw==",
+      "path": "nsubstituteautomocker/1.1.0",
+      "hashPath": "nsubstituteautomocker.1.1.0.nupkg.sha512"
+    },
+    "NUnit/3.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E3ii6+VLdeIxTQ5gPjk/7g/xl+aCifbfcIkiGayZCuos+22FEdtKGrxMe6SzoXCQCcL7gdqhfNIFTaZ1+dS18g==",
+      "path": "nunit/3.10.1",
+      "hashPath": "nunit.3.10.1.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",

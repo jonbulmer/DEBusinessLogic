@@ -14,3 +14,8 @@ ResourceFileServer/obj/Debug/netcoreapp2.0/ResourceFileServer.csproj.FileListAbs
 ResourceFileServer/obj/project.assets.json
 .vs/DEBusinessLogic/v15/.suo
 .vs/DEBusinessLogic/v15/.suo
+*.cache
+*.cache
+*.props
+*.pdb
+DE.WebApi.Tests/bin/Debug/netcoreapp2.0/DE.WebApi.Tests.dll

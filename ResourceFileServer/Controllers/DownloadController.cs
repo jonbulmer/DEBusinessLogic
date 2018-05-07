@@ -26,7 +26,7 @@ namespace ResourceFileServer.Controllers
             if(!string.IsNullOrEmpty(filePath))
             {
                 var fileContents = System.IO.File.ReadAllBytes(filePath);
-                return new FileContentResult(fileContents, 'application/octet-stream');
+                return new FileContentResult(fileContents, "application/octet-stream");
             }
             return new StatusCodeResult(401);
         }

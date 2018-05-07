@@ -57,5 +57,10 @@ namespace ResourceFileServer.Providers
             }
             return false;
         }
+
+        public List<string> GetFileIdForUser(bool isSecuredFileAdmin)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
