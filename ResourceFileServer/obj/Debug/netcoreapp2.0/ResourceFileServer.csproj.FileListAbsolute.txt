@@ -6,3 +6,6 @@ C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp
 C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.runtimeconfig.json
 C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.runtimeconfig.dev.json
 C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\bin\Debug\netcoreapp2.0\ResourceFileServer.pdb
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.dll
+C:\WorkSpace\DiamondEdge\DEBusinessLogic\ResourceFileServer\obj\Debug\netcoreapp2.0\ResourceFileServer.pdb

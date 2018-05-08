@@ -1,10 +1,9 @@
 using DE.WebApi.FakeDataStore;
 using DE.WebApi.Controllers;
-using NSubstitute;
+//using NSubstitute;
 using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
 
-// TODO when I have internet add NUnit and NSubtitute.
 namespace DE.WebApi.Tests
 {
     [TestFixture]

@@ -3027,27 +3027,6 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "NSubstitute/1.8.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/NSubstitute.dll": {}
-        },
-        "runtime": {
-          "lib/net45/NSubstitute.dll": {}
-        }
-      },
-      "NSubstituteAutoMocker/1.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NSubstitute": "1.8.2"
-        },
-        "compile": {
-          "lib/net45/NSubstituteAutoMocker.dll": {}
-        },
-        "runtime": {
-          "lib/net45/NSubstituteAutoMocker.dll": {}
-        }
-      },
       "NUnit/3.10.1": {
         "type": "package",
         "dependencies": {
@@ -8434,36 +8413,6 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "NSubstitute/1.8.2": {
-      "sha512": "BQ1+IkxF2gMgoT1roWajubawdi0ccDxmG9/pm9D7QZuIMSWHrbYQVDtWOacmjkRi9y+0zSvu7c71dvfCU7frWw==",
-      "type": "package",
-      "path": "nsubstitute/1.8.2",
-      "files": [
-        "BreakingChanges.txt",
-        "CHANGELOG.txt",
-        "LICENSE.txt",
-        "README.txt",
-        "acknowledgements.txt",
-        "lib/net35/NSubstitute.XML",
-        "lib/net35/NSubstitute.dll",
-        "lib/net40/NSubstitute.XML",
-        "lib/net40/NSubstitute.dll",
-        "lib/net45/NSubstitute.XML",
-        "lib/net45/NSubstitute.dll",
-        "nsubstitute.1.8.2.nupkg.sha512",
-        "nsubstitute.nuspec"
-      ]
-    },
-    "NSubstituteAutoMocker/1.1.0": {
-      "sha512": "hUw1IewvGTl2CsYkKjdrH2H6z24bVw+EHv3x+EMIfhygeF5gaHx4FbGJOuEXscXqUOrXCJInc474UbFFpgkmkw==",
-      "type": "package",
-      "path": "nsubstituteautomocker/1.1.0",
-      "files": [
-        "lib/net45/NSubstituteAutoMocker.dll",
-        "nsubstituteautomocker.1.1.0.nupkg.sha512",
-        "nsubstituteautomocker.nuspec"
-      ]
-    },
     "NUnit/3.10.1": {
       "sha512": "E3ii6+VLdeIxTQ5gPjk/7g/xl+aCifbfcIkiGayZCuos+22FEdtKGrxMe6SzoXCQCcL7gdqhfNIFTaZ1+dS18g==",
       "type": "package",
@@ -13735,7 +13684,6 @@
       "MSTest.TestFramework >= 1.2.0",
       "Microsoft.NET.Test.Sdk >= 15.5.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "NSubstituteAutoMocker >= 1.1.0",
       "NUnit >= 3.10.1"
     ]
   },
@@ -13805,10 +13753,6 @@
             "version": "[2.0.0, )",
             "autoReferenced": true
           },
-          "NSubstituteAutoMocker": {
-            "target": "Package",
-            "version": "[1.1.0, )"
-          },
           "NUnit": {
             "target": "Package",
             "version": "[3.10.1, )"
@@ -13821,27 +13765,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NSubstitute 1.8.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NSubstitute",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NSubstituteAutoMocker 1.1.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NSubstituteAutoMocker",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

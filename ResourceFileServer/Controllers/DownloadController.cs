@@ -50,7 +50,7 @@ namespace ResourceFileServer.Controllers
             if(_securedFilePathProvider.HasUserClaimToAccessFile(id, adminClaim != null))
             {
                 var oneTimeToken = _securedFilePathProvider.AddFileIdForUseOnceAccessId(filePath);
-                return Ok(new DownloadToken { oneTimeToken = oneTimeToken });
+                return Ok(new DownloadToken { OneTimeToken = oneTimeToken });
             }
             return new StatusCodeResult(403);
         }

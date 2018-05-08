@@ -5,13 +5,11 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DE.WebApi", "DE.WebApi\DE.WebApi.csproj", "{DC119E1C-A5BE-4CAF-B611-14D3478352DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DE.WebApi.Tests", "DE.WebApi.Tests\DE.WebApi.Tests.csproj", "{9726D3DF-DDBC-4C4E-A5EB-3BCB81F05D8F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DE.IdentityServer.Settings", "DE.IdentityServer.Settings\DE.IdentityServer.Settings.csproj", "{99338B2E-3631-4E09-AECA-75BFCB0C0530}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DE.IDP", "DE.IDP\DE.IDP.csproj", "{49B811BC-98B5-428C-BECF-7F4706A6ACD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceFileServer", "ResourceFileServer\ResourceFileServer.csproj", "{7221A91E-BDBE-401E-93B8-1A964EFACE22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceFileServer", "ResourceFileServer\ResourceFileServer.csproj", "{7221A91E-BDBE-401E-93B8-1A964EFACE22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{DC119E1C-A5BE-4CAF-B611-14D3478352DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC119E1C-A5BE-4CAF-B611-14D3478352DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC119E1C-A5BE-4CAF-B611-14D3478352DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9726D3DF-DDBC-4C4E-A5EB-3BCB81F05D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9726D3DF-DDBC-4C4E-A5EB-3BCB81F05D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9726D3DF-DDBC-4C4E-A5EB-3BCB81F05D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9726D3DF-DDBC-4C4E-A5EB-3BCB81F05D8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{99338B2E-3631-4E09-AECA-75BFCB0C0530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{99338B2E-3631-4E09-AECA-75BFCB0C0530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99338B2E-3631-4E09-AECA-75BFCB0C0530}.Release|Any CPU.ActiveCfg = Release|Any CPU
