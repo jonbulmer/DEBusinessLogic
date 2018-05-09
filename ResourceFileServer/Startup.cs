@@ -42,7 +42,7 @@ namespace ResourceFileServer
             policy.Origins.Add("*");
             policy.SupportsCredentials = true;
 
-            services.AddCors(x => x.AddPolicy("corsGlobalPolicy", policy));
+            services.AddCors(x => x.AddPolicy("AllowAllMethods", policy));
 
             var securedFilesPolicy = new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser()
