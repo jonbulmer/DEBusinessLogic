@@ -34,7 +34,7 @@ namespace DE.IdentityServer.Settings
             services.AddMvc();
             services.AddCors(options =>
             {
-                options.AddPolicy("",
+                options.AddPolicy("AllowAllOrigins",
                     builder =>
                     {
                         builder

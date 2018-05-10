@@ -42,7 +42,8 @@ namespace ResourceFileServer
             policy.Origins.Add("*");
             policy.SupportsCredentials = true;
 
-            services.AddCors(x => x.AddPolicy("AllowAllMethods", policy));
+            //services.AddCors(x => x.AddPolicy("corsGlobalPolicy", policy));
+            services.AddCors();
 
             var securedFilesPolicy = new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser()
@@ -86,8 +87,9 @@ namespace ResourceFileServer
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseCors("corsGlobalPolicy");
-
+            //app.UseCors("corsGlobalPolicy");
+            //app.UseCors( options => options.WithOrigins("http://localhost:8080").AllowAnyMethod());
+            app.UseCors(c => c.AllowAnyOrigin());
             app.UseStaticFiles();
 
             app.UseAuthentication();

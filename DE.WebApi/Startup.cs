@@ -14,6 +14,7 @@ namespace DE.WebApi
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc();
         }
 
@@ -30,9 +31,8 @@ namespace DE.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(options => options.WithOrigins("http://localhost:8080").AllowAnyMethod());
             app.UseStatusCodePages();
-            app.UseCors(c => c.AllowAnyOrigin());
             app.UseMvc();
         }
     }
