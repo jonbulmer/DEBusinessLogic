@@ -1,7 +1,24 @@
 ﻿@using System.Globalization
 @using IdentityServerWithAspNetIdentity.Resources
 @model IdentityServer4.Quickstart.UI.Models.LoginViewModel
-<h2></h2>
-<div>
+@inject SignInManager<ApplicationUser> SignInManager
 
+@inject LocServices SharedLocalizer
+
+@{
+    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("Login");
+}
+<h2>ViewData["Title"]</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@Model.ReturnUrl">
+
+            </form>
+        </section>
+    </div>
 </div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync(_ValidationScriptPartial); }    
+}
