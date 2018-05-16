@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using DE.IDP.Models;
 using DE.IDP.Models.AccountViewModels;
 using IdentityModel;
@@ -20,20 +21,33 @@ namespace DE.IDP.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        private readonly string a;
-        private readonly string b;
-        private readonly string c;
-        private readonly string d;
-        private readonly string e;
-        private readonly string f;
-        private readonly string g;
-        private readonly string h;
+        private readonly UserManager<ApplicationUser> _userManger;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IEmailSender _emailSender;
+        private readonly ISmsSender _smsSender;
+        private readonly ILogger _logger;
+        private readonly IIdentityServerInteractionService _interaction;
+        private readonly IClientStore _clientStore;
+        private readonly IPersistedGrantService _persistedGrantService;
 
         public AccountController(
-            UserManger<ApplicationUser> userManger
-            )
+            UserManager<ApplicationUser> userManger,
+            SignInManager<ApplicationUser> _signInManager,
+            IEmailSender _emailSender,
+            ISmsSender _smsSender,
+            ILogger _logger,
+            IIdentityServerInteractionService _interaction,
+            IClientStore _clientStore,
+            IPersistedGrantService _persistedGrantService)
         {
-
+            _userManger
+        _signInManager = _signInManager;
+        _emailSender;
+        _smsSender;
+        _logger;
+        _interaction;
+        _clientStore;
+        _persistedGrantService
         }
     }
 }
