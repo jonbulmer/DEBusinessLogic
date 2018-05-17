@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DE.IDP.Models;
 using DE.IDP.Models.AccountViewModels;
+using DE.IDP.Services;
 using IdentityModel;
 using IdentityServer4;
 using IdentityServer4.Extensions;
@@ -21,7 +22,7 @@ namespace DE.IDP.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManger;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ISmsSender _smsSender;
@@ -40,9 +41,9 @@ namespace DE.IDP.Controllers
             IClientStore _clientStore,
             IPersistedGrantService _persistedGrantService)
         {
-            _userManger
-        _signInManager = _signInManager;
-        _emailSender;
+            _userManager = userManger;
+            _signInManager = signInManager;
+            _emailSender = emailSender;
         _smsSender;
         _logger;
         _interaction;
