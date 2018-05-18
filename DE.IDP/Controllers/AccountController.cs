@@ -33,22 +33,33 @@ namespace DE.IDP.Controllers
 
         public AccountController(
             UserManager<ApplicationUser> userManger,
-            SignInManager<ApplicationUser> _signInManager,
-            IEmailSender _emailSender,
-            ISmsSender _smsSender,
-            ILogger _logger,
-            IIdentityServerInteractionService _interaction,
-            IClientStore _clientStore,
-            IPersistedGrantService _persistedGrantService)
+            SignInManager<ApplicationUser> signInManager,
+            IEmailSender emailSender,
+            ISmsSender smsSender,
+            ILogger logger,
+            IIdentityServerInteractionService interaction,
+            IClientStore clientStore,
+            IPersistedGrantService persistedGrantService)
         {
             _userManager = userManger;
             _signInManager = signInManager;
             _emailSender = emailSender;
-        _smsSender;
-        _logger;
-        _interaction;
-        _clientStore;
-        _persistedGrantService
+            _smsSender = smsSender;
+            _logger = logger;
+            _interaction = interaction;
+            _clientStore = clientStore;
+            _persistedGrantService = persistedGrantService;
+        }
+
+        //GET Account/Loging
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login (string returnUrl = null)
+        {
+
+            var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
+            var vm = await BuildLoginViewModelAsync(returnUrl, context); 
+            return View(vm);
         }
     }
 }
