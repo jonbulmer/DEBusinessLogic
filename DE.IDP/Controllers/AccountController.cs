@@ -58,7 +58,12 @@ namespace DE.IDP.Controllers
         {
 
             var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
-            var vm = await BuildLoginViewModelAsync(returnUrl, context); 
+            var vm = await BuildLoginViewModelAsync(returnUrl, context);
+
+            if (vm.EnableLocalLogin == false && vm.ExternalProviders.Count() == 1)
+            {
+                return ExternalLogin(vm.ExternalProviders.First(),AuthenticationScheme, returnUrl); 
+            }
             return View(vm);
         }
     }
