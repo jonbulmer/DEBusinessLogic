@@ -62,9 +62,16 @@ namespace DE.IDP.Controllers
 
             if (vm.EnableLocalLogin == false && vm.ExternalProviders.Count() == 1)
             {
-                return ExternalLogin(vm.ExternalProviders.First(),AuthenticationScheme, returnUrl); 
+                return ExternalLogin(vm.ExternalProviders.First().AuthenticationScheme, returnUrl); 
             }
             return View(vm);
+        }
+
+        async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
+        {
+            return new LoginViewModel
+            {
+            };
         }
     }
 }
