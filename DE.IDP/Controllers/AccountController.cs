@@ -73,5 +73,14 @@ namespace DE.IDP.Controllers
             {
             };
         }
+
+        // Post: /Account/ExternalLogin
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public IActionResult ExternalLogin(string provider, string returnUrl = null)
+        {
+            return Challenge(properties, provider);
+        }
     }
 }
