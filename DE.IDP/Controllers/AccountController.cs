@@ -69,8 +69,31 @@ namespace DE.IDP.Controllers
 
         async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
         {
+            var loginProviders = ();
+            var providers = loginProviders;
+
+            var allowLocal = true;
+            if (context?.ClientId != null)
+            {
+                var client = await _clientStore.FindEnabledClientByIdAsync(context.ClientId);
+                if (client != null)
+                {
+                    allowLocal = client.EnableLocalLogin;
+
+                    if (client.IdentityProviderRestrictions != null && client.IdentityProviderRestrictions.Any())
+                    {
+                        providers = providers.Where(provider =>
+                           client.IdentityProviderRestrictions.Contains(provider.AuthenticationScheme)
+                        );
+                    }
+                }
+            }
             return new LoginViewModel
             {
+                EnableLocalLogin = allowLocal,
+                ReturnUrl = returnUrl,
+                Email = context?.LoginHint,
+                ExternalProviders providers.ToArray()
             };
         }
 
