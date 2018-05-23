@@ -69,8 +69,14 @@ namespace DE.IDP.Controllers
 
         async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
         {
-            var loginProviders = ();
-            var providers = loginProviders;
+            var loginProviders = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+            var providers = loginProviders
+                .Where(x => x.DisplayName != null)
+                .Select(x => new ExternalProvider
+                {
+                    DisplayName =x.DisplayName ,
+                    AuthenticationScheme = x.Name
+                });
 
             var allowLocal = true;
             if (context?.ClientId != null)
@@ -103,6 +109,8 @@ namespace DE.IDP.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult ExternalLogin(string provider, string returnUrl = null)
         {
+            var redirectUrl = Url.Action("", "", new { ReturnUrl = returnUrl});
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
             return Challenge(properties, provider);
         }
     }
