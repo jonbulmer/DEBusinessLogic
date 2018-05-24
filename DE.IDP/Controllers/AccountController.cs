@@ -99,7 +99,7 @@ namespace DE.IDP.Controllers
                 EnableLocalLogin = allowLocal,
                 ReturnUrl = returnUrl,
                 Email = context?.LoginHint,
-                ExternalProviders providers.ToArray()
+                ExternalProviders = providers.ToArray()
             };
         }
 
