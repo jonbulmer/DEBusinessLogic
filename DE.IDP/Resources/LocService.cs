@@ -3,9 +3,9 @@ using Microsoft.Extensions.Localization;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IdentityServerWithAspNetIdentity.Resources
+namespace DE.IDP.Resources
 {
-    public class LocService
+    public class LocServices
     {
         private readonly IStringLocalizer _localizer;
 
