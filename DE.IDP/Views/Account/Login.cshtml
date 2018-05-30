@@ -13,36 +13,17 @@
     <div class="col-md-8">
         <section>
             <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                <h4></h4>
+                <h4 ></h4>
                 <hr />
-                <div></div>
+                <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group">
-                    <label />
-                    <div>
+                    <label class="col-md-4 control-label">@SharedLocalizer.GetLocalizedHtmlString("email")</label>
+                    <div class="col-md-8">
                         <input />
                         <span></span>
                     </div>
                 </div>
             </form>
-        </section>
-    </div>
-    <div class="col-md-8">
-        <section>
-            <h4>Use another service to log in.</h4>
-            <hr />
-            @{ 
-                var loginProviders = Model.ExternalProviders.ToArray();
-                if (loginProviders.length == 0)
-                {
-
-                }
-                else
-                { 
-                    <form asp-controller="Account" asp-action="ExternalLogin">
-
-                    </form>
-                }
-            }
         </section>
     </div>
 </div>
